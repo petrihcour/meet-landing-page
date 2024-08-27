@@ -1,31 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Meet landing page</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Cyan
+            "cyan-600": '#4D96A9',
+            "cyan-300": "#8FE3F9",
+            // Purple
+            "purple-600": "#855FB1",
+            "purple-300": "#D9B8FF",
+            // Slate
+            "slate-900": "#28283D",
+            "slate-600": "#87879D",
+            "slate-300": "#D1D1DF",
+            // White
+            "white": "#FAFAFA",
+          },
+          fontFamily: {
+            "red-hat-display": ["Red Hat Display", "sans-serif"],
+          },
+          fontSize: {
+            // Text Preset 1
+            "6xl": ["64px", {
+              lineHeight: "110%",
+              fontWeight: "900",
+            }],
+            // Text Preset 2
+            "4xl": ["40px", {
+              lineHeight: "110%",
+              fontWeight: "900",
+            }],
+            // Text Preset 3
+            "base": ["16px", {
+              lineHeight: "110%",
+              fontWeight: "900",
+            }],
+            // Text Preset 4
+            "lg": ["18px", {
+              lineHeight: "110%",
+              fontWeight: "700",
+            }],
+          }
+        }
+      }
+    }
+  </script>
+
 </head>
-<body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
 
-  Download v1.3
-  What is it?
+<!-- 
+Text Preset 1: text-6xl
+Text Preset 2: text-4xl
+Text Preset 3 and 5: text-base
+Text Preset 4: text-lg
+-->
 
-  01
-  Built for modern use
+<body class="font-red-hat-display flex flex-col">
 
-  Smarter meetings, all in one place
+  <div class="flex justify-center align-stretch">
+    <img src="/assets/logo.svg" alt="meet logo" class="px-20 pt-12" />
+  </div>
 
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
+  <main class="flex flex-col">
+    <div>
+      <h1 class="text-4xl">Group chat for everyone</h1>
+    </div>
+    Meet makes it easy to connect with others face-to-face virtually and collaborate across any
+    device.
+    Download v1.3
+    What is it?
 
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+    01
+    Built for modern use
 
-  Download v1.3
+    Smarter meetings, all in one place
+
+    Send messages, share files, show your screen, and record your meetings — all in one
+    workspace. Control who can join with invite-only team access, data encryption, and data export.
+
+    02
+    Experience more together
+    Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+
+    Download v1.3
+  </main>
 </body>
+
 </html>
