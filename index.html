@@ -47,16 +47,13 @@
               lineHeight: "110%",
               fontWeight: "900",
             }],
-            // Text Preset 3
-            "base": ["16px", {
-              lineHeight: "110%",
-              fontWeight: "900",
-            }],
             // Text Preset 4
             "lg": ["18px", {
               lineHeight: "110%",
               fontWeight: "700",
             }],
+            // Text Preset 4 and 5
+            "base": ["16px"]
           }
         }
       }
@@ -72,34 +69,52 @@ Text Preset 3 and 5: text-base
 Text Preset 4: text-lg
 -->
 
-<body class="font-red-hat-display flex flex-col">
+<body class="font-red-hat-display flex flex-col bg-white">
 
-  <div class="flex justify-center align-stretch">
-    <img src="/assets/logo.svg" alt="meet logo" class="px-20 pt-12" />
+  <div class="flex justify-center items-stretch">
+    <img src="assets/logo.svg" alt="meet logo" class="px-20 pt-12 self-stretch" />
   </div>
 
   <main class="flex flex-col">
-    <div>
-      <h1 class="text-4xl">Group chat for everyone</h1>
+    <div class="pt-16 overflow-hidden flex justify-center pb-12">
+      <img src="assets/tablet/image-hero.png" src="avatar icons of different individuals" class="max-w-[433.003px]" />
     </div>
-    Meet makes it easy to connect with others face-to-face virtually and collaborate across any
-    device.
-    Download v1.3
-    What is it?
 
-    01
-    Built for modern use
 
-    Smarter meetings, all in one place
+    <div class="flex justify-center px-8 pb-8">
+      <div class="max-w-[305px] space-y-6">
+        <h1 class="text-slate-900 text-4xl text-center">Group Chat <br /> for Everyone</h1>
 
-    Send messages, share files, show your screen, and record your meetings — all in one
-    workspace. Control who can join with invite-only team access, data encryption, and data export.
+        <p class="text-base font-medium text-slate-600 text-center leading-[1.5rem]">Meet makes it easy to connect with
+          others face-to-face virtually and collaborate across any
+          device.</p>
+        <div class="flex flex-col items-center gap-y-4">
+          <button class="rounded-full bg-cyan-600 text-white text-base font-black px-10 py-4 leading-[1.5rem]">Download
+            <span class="text-cyan-300">
+              v1.3</span></button>
+          <button class="rounded-full bg-purple-600 text-white text-base font-black px-10 py-4 leading-[1.5rem]"> What
+            is it?</button>
+        </div>
+      </div>
+    </div>
 
-    02
-    Experience more together
-    Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
 
-    Download v1.3
+    <div class="px-8 pt-8">
+      01
+      Built for modern use
+
+      Smarter meetings, all in one place
+
+      Send messages, share files, show your screen, and record your meetings — all in one
+      workspace. Control who can join with invite-only team access, data encryption, and data export.
+    </div>
+    <div class="self-center">02</div>
+    <div class="px-8">
+      Experience more together
+      Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+
+      Download v1.3
+    </div>
   </main>
 </body>
 
