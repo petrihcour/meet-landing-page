@@ -50,7 +50,7 @@
             // Text Preset 4
             "lg": ["18px", {
               lineHeight: "110%",
-              fontWeight: "700",
+              fontWeight: "500",
             }],
             // Text Preset 4 and 5
             "base": ["16px"]
@@ -72,35 +72,57 @@ Text Preset 4: text-lg
 <body class="font-red-hat-display flex flex-col bg-white">
 
   <div class="flex justify-center items-stretch">
-    <img src="assets/logo.svg" alt="meet logo" class="pt-12 self-stretch" />
+    <img src="assets/logo.svg" alt="meet logo" class="pt-12 lg:pt-20 self-stretch" />
   </div>
 
   <main class="flex flex-col justify-center">
-    <div class="pt-16 overflow-hidden flex justify-center items-stretch pb-12 md:pb-[72px]">
+
+
+    <div class="pt-16 lg:pt-0 overflow-hidden flex justify-center items-stretch pb-12 md:pb-[72px] lg:pb-20">
+
+      <!-- mobile and tablet image -->
       <img src="assets/tablet/image-hero.png" src="avatar icons of different individuals"
-        class="max-w-[433.003px] md:max-w-4xl	 self-stretch" />
+        class="max-w-[433.003px] md:max-w-4xl	self-stretch lg:hidden" />
+
     </div>
 
+    <div class="lg:flex justify-between items-center overflow-hidden">
 
-    <div class="flex justify-center px-8 pb-8 md:pb-16">
-      <div class="max-w-[305px] md:max-w-md space-y-6">
-        <h1 class="text-slate-900 text-4xl md:text-[48px] text-center">Group Chat <br /> for Everyone</h1>
+      <!-- desktop image -->
+      <div class="flex hidden lg:block -ml-7">
+        <img src="assets/desktop/image-hero-left.png" alt="avatar images of indivuals" />
+      </div>
 
-        <p class="text-base font-medium text-slate-600 text-center leading-[1.5rem]">Meet makes it easy to connect with
-          others face-to-face virtually and collaborate across any
-          device.</p>
-        <div class="flex flex-col md:flex-row justify-center items-center gap-y-4 md:gap-[17px]">
-          <button class="rounded-full bg-cyan-600 text-white text-base font-black px-10 py-4 leading-[1.5rem]">Download
-            <span class="text-cyan-300">
-              v1.3</span></button>
-          <button class="rounded-full bg-purple-600 text-white text-base font-black px-10 py-4 leading-[1.5rem]"> What
-            is it?</button>
+      <div class="flex justify-center px-8 pb-8 md:pb-16 lg:pb-0">
+
+        <div class="max-w-[305px] md:max-w-md space-y-6">
+          <h1 class="text-slate-900 text-4xl md:text-[48px] lg:text-6xl text-center">Group Chat <br /> for Everyone</h1>
+
+          <p class="text-base font-medium lg:text-lg text-slate-600 text-center leading-[1.5rem]">Meet makes it easy to
+            connect
+            with
+            others face-to-face virtually and collaborate across any
+            device.</p>
+          <div class="flex flex-col md:flex-row justify-center items-center gap-y-4 md:gap-[17px]">
+            <button
+              class="rounded-full bg-cyan-600 text-white text-base font-black px-10 py-4 leading-[1.5rem]">Download
+              <span class="text-cyan-300">
+                v1.3</span></button>
+            <button class="rounded-full bg-purple-600 text-white text-base font-black px-10 py-4 leading-[1.5rem]"> What
+              is it?</button>
+          </div>
         </div>
       </div>
+
+      <!-- second desktop image -->
+      <div class="flex hidden lg:block -mr-7">
+        <img src="assets/desktop/image-hero-right.png" src="avatar images of individuals" />
+      </div>
+
     </div>
 
 
-    <div class="flex flex-col justify-center items-center self-center px-8 pt-8 md:pt-14 max-w-[1120px] pb-16">
+    <div class="flex flex-col justify-center items-center self-center px-8 lg:px-20 pt-8 md:pt-14 max-w-[1120px] lg:max-w-screen-xl pb-16 lg:pb-[72px]">
 
       <div class="flex flex-col divide-y divide-slate-300 h-20 w-px bg-slate-300"> </div>
 
@@ -108,22 +130,22 @@ Text Preset 4: text-lg
         <p class="text-base font-black leading-[1.5rem] text-slate-600 ">01</p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-16 md:max-w-2xl">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8 py-16 md:max-w-2xl lg:max-w-6xl">
         <img src="assets/desktop/image-woman-in-videocall.jpg" alt="woman in videocall" class="rounded-lg" />
         <img src="assets/desktop/image-women-videochatting.jpg" alt="women videochatting" class="rounded-lg" />
         <img src="assets/desktop/image-men-in-meeting.jpg" alt="men in meeting" class="rounded-lg" />
         <img src="assets/desktop/image-man-texting.jpg" alt="man texting" class="rounded-lg" />
       </div>
 
-      <div class="flex flex-col items-center text-center max-w-[504px]">
-        <p class="text-xs md:text-sm font-black uppercase leading-[1.1rem] tracking-[4px] text-cyan-600 pb-4">Built for
+      <div class="flex flex-col items-center text-center max-w-[504px] lg:max-w-[544px]">
+        <p class="text-xs md:text-sm lg:text-base font-black uppercase leading-[1.1rem] tracking-[4px] text-cyan-600 pb-4">Built for
           modern use
         </p>
 
-        <h2 class="text-4xl text-[32px] md:text-[36px] text-slate-900 pb-8 md:max-w-md">Smarter meetings, all in one
+        <h2 class="text-4xl text-[32px] md:text-[36px] lg:text-4xl text-slate-900 pb-8 md:max-w-md">Smarter meetings, all in one
           place</h2>
 
-        <p class="text-base font-medium text-slate-600 leading-[1.5rem]">Send messages, share files, show
+        <p class="text-base lg:text-lg font-medium text-slate-600 leading-[1.5em] md:leading-[24px] lg:leading-[27px]">Send messages, share files, show
           your screen, and record your meetings — all in one
           workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
       </div>
